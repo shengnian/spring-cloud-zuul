@@ -7,6 +7,9 @@ zuul:
     service-a:
       path: /service-a/**
       url: https://github.com/shengnian/spring-cloud-zuul
+    service-b:
+      path: /service-b/**
+      url: https://93.212.21.1:8080/
 #  routes:
 #    service-a:
 #      path: /service-a/**
