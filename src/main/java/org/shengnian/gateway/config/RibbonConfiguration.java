@@ -1,12 +1,5 @@
 package org.shengnian.gateway.config;
 
-import com.netflix.client.config.IClientConfig;
-import com.netflix.loadbalancer.Server;
-import com.netflix.loadbalancer.ServerList;
-import org.springframework.cloud.netflix.ribbon.StaticServerList;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
 /**
  * Created by C.C on 2018/2/11
  */
