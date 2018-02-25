@@ -1,0 +1,26 @@
+server:
+  port: 9880
+zuul:
+  routes:
+    service-a:
+      path: /service-a/**
+      serviceId: serviceA
+    service-b:
+      path: /service-b/**
+      serviceId: serviceB
+  FormBodyWrapperFilter.pre.disable: true
+
+serverA:
+  ribbon:
+    listOfServers: www.google.com
+serviceB:
+  ribbon:
+    listOfServers: www.yandex.com
+
+ribbon:
+  eureka:
+    enabled: false
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
